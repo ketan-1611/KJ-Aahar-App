@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kjaaharapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KJAaharApp">
+        <activity
+            android:name=".activity.Activity.UserdataActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity
+            android:name=".activity.Activity.ContactUsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.HistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.MyPinsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.FoodMapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.ReceiveActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.DonateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.WelcomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Activity.SplashActvity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.KJAaharApp.Dark.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Activity.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.Activity.ContactUsActivity">
+
+
+    <ImageView
+        android:id="@+id/ivContact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/contact"
+        app:tint="@color/white"
+        android:background="@drawable/rounded_bg"
+        android:layout_marginTop="16dp"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/etNameContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="20sp"
+            android:inputType="textNoSuggestions"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:importantForAutofill="no"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/etEmailContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:importantForAutofill="no"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/etMessageContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:maxLines="20"
+            android:importantForAutofill="no"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_submit_donate"
+        app:layout_constraintTop_toBottomOf="@+id/messageContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

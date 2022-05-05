@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.Activity.ReceiveActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvDonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Receiver"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameReceiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/white"
+                android:layout_margin="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDonate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <EditText
+                    android:id="@+id/etNameReceiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Receiver Name"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:importantForAutofill="no"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="textNoSuggestions"
+                    android:background="@android:color/transparent"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionReceiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/white"
+                android:layout_margin="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/nameReceiver"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <EditText
+                    android:id="@+id/etDescriptionReceiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Description"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:maxLines="10"
+                    android:importantForAutofill="no"
+                    android:textSize="20sp"
+                    android:inputType="textMultiLine"
+                    android:background="@android:color/transparent"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <fragment
+                android:id="@+id/google_map"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                map:uiZoomControls="true"
+                tools:ignore="FragmentTagUsage"
+                map:layout_constraintTop_toBottomOf="@+id/descriptionReceiver"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmitReceiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@drawable/btn_submit_donate"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/google_map"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

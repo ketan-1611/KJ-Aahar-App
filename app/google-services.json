@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "374024851178",
+    "project_id": "kj-ahar-app",
+    "storage_bucket": "kj-ahar-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374024851178:android:2d00c6060c341027685193",
+        "android_client_info": {
+          "package_name": "com.example.kjaaharapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374024851178-nacqf88ug961mma31gsap80jlk484m2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kjaaharapp",
+            "certificate_hash": "239642fee7d5f3b019636d9c3dcb45325b21c4b1"
+          }
+        },
+        {
+          "client_id": "374024851178-jqdko2u2hpf6p4on63r058mbvijp8rt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwNjJoxLGXJAtfnvj3RBaO7LogWfo1fg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374024851178-jqdko2u2hpf6p4on63r058mbvijp8rt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
